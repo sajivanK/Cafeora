@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Caféora</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome_title">Choose your\nFavorite Coffee</string>
+    <string name="welcome_subtitle">The best grain, the finest roast</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="coffee_title1">Caramel Latte</string>
+    <string name="coffee_des1">Smooth caramel with creamy milk</string>
+    <string name="coffee_price1">$4.99</string>
+
+
+    <string name="coffee_title2">Espresso</string>
+    <string name="coffee_des2">Strong and bold single shot</string>
+    <string name="coffee_price2">$2.49</string>
+
+    <string name="coffee_title3">Cappuccino</string>
+    <string name="coffee_des3">Rich coffee with steamed milk</string>
+    <string name="coffee_price3">$3.49</string>
+
+    <string name="coffee_title4">Mocha</string>
+    <string name="coffee_des4">Chocolate and espresso delight</string>
+    <string name="coffee_price4">$3.99</string>
+
+    <string name="coffee_title5">Iced Latte</string>
+    <string name="coffee_des5">Chilled espresso over ice</string>
+    <string name="coffee_price5">$4.29</string>
+
+    <string name="coffee_title6">Flat White</string>
+    <string name="coffee_des6">Smooth blend with microfoam</string>
+    <string name="coffee_price6">$3.79</string>
+
+    <string name="coffee_title7">Vanilla Cold Brew</string>
+    <string name="coffee_des7">Chilled brew with vanilla flavor</string>
+    <string name="coffee_price7">$4.59</string>
+
+    <string name="coffee_title8">Hazelnut Latte</string>
+    <string name="coffee_des8">Creamy latte with nutty twist</string>
+    <string name="coffee_price8">$4.19</string>
+
+    <string name="coffee_title9">Macchiato</string>
+    <string name="coffee_des9">Espresso marked with steamed milk</string>
+    <string name="coffee_price9">$3.79</string>
+
+    <string name="coffee_title10">Affogato</string>
+    <string name="coffee_des10">Espresso poured over vanilla ice cream</string>
+    <string name="coffee_price10">$4.99</string>
+
+    <string name="size_small">Small</string>
+    <string name="size_medium">Medium</string>
+    <string name="size_large">Large</string>
+
+    <string name="coffee_image">Coffee product image</string>
+
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="initial_quantity">1</string>
+    <string name="default_price">$0.00</string>
+
+    <string name="cart_title">Your Cart</string>
+    <string name="cart_total_label">Total: $0.00</string>
+    <string name="checkout">Checkout</string>
+
+
+    <string name="empty_cart_message">Your cart is empty.</string>
+    <string name="cart_loaded">Cart loaded!</string>
+    <string name="cart_item_info">%1$s (%2$s)\nQty: %3$d  Price: $%4$.2f</string>
+
+    <string name="name_on_card">Name on Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="place_order">Place Order</string>
+
+
+    <string name="cart_item_name_format">%1$s (%2$s)</string>
+    <string name="back_button">Back</string>
+
+    <string name="back_to_menu">Back to Menu</string>
+
+
+
+
+
+</resources>

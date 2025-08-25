@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Coffee Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage1"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/coffee1"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title1"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage1"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage1"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn1"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des1"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName1"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName1"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName1" />
+
+                <TextView
+                    android:id="@+id/coffeePrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price1"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc1"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName1" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage2"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/espresso"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title2"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage2"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage2"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn2"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des2"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName2"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName2"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName2" />
+
+                <TextView
+                    android:id="@+id/coffeePrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price2"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc2"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName2" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage3"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cappuccino"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title3"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage3"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage3"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn3"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des3"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName3"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName3"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName3" />
+
+                <TextView
+                    android:id="@+id/coffeePrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price3"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc3"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName3" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage4"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mocha"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title4"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage4"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage4"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn4"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des4"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName4"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName4"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName4" />
+
+                <TextView
+                    android:id="@+id/coffeePrice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price4"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc4"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName4" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 5 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage5"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/iced_latte"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title5"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage5"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage5"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn5"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des5"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName5"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName5"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName5" />
+
+                <TextView
+                    android:id="@+id/coffeePrice5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price5"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc5"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName5" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 6 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage6"
+                    android:layout_width="100dp"
+                    android:contentDescription="@string/coffee_image"
+                    android:layout_height="100dp"
+                    android:src="@drawable/flat_white"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title6"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage6"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage6"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn6"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des6"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName6"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName6"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName6" />
+
+                <TextView
+                    android:id="@+id/coffeePrice6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price6"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc6"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName6" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 7 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/coffee_image"
+                    android:src="@drawable/vanilla_cold_brew"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title7"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage7"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage7"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn7"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des7"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName7"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName7"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName7" />
+
+                <TextView
+                    android:id="@+id/coffeePrice7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price7"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc7"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName7" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn7"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 8 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage8"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/coffee_image"
+                    android:src="@drawable/hazelnut_latte"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title8"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage8"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage8"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn8"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des8"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName8"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName8"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName8" />
+
+                <TextView
+                    android:id="@+id/coffeePrice8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price8"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc8"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName8" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn8"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 9 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/macchiato"
+                    android:contentDescription="@string/coffee_image"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title9"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage9"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage9"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn9"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des9"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName9"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName9"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName9" />
+
+                <TextView
+                    android:id="@+id/coffeePrice9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price9"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc9"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName9" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn9"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Coffee Card 10 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coffeeCard10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            android:elevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="goToProductDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/coffeeImage10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/coffee_image"
+                    android:src="@drawable/affogato"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <TextView
+                    android:id="@+id/coffeeName10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_title10"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toTopOf="@id/coffeeImage10"
+                    app:layout_constraintStart_toEndOf="@id/coffeeImage10"
+                    app:layout_constraintEnd_toStartOf="@id/addToCartBtn10"
+                    android:layout_marginStart="12dp" />
+
+                <TextView
+                    android:id="@+id/coffeeDesc10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_des10"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/brown"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeName10"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName10"
+                    app:layout_constraintEnd_toEndOf="@id/coffeeName10" />
+
+                <TextView
+                    android:id="@+id/coffeePrice10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coffee_price9"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/outfit"
+                    android:textColor="@color/malt"
+                    app:layout_constraintTop_toBottomOf="@id/coffeeDesc10"
+                    app:layout_constraintStart_toStartOf="@id/coffeeName10" />
+
+                <ImageButton
+                    android:id="@+id/addToCartBtn10"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/add_to_cart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

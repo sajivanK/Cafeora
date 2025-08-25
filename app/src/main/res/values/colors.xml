@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brown">#6F4E37</color>
+    <color name="cream">#FFF8F0</color>
+    <color name="accent">#FFD700</color>
+    <color name="malt">#F29111</color>
+    <color name="btn">#845409</color>
+    <color name="text1">#82480b</color>
+
+</resources>

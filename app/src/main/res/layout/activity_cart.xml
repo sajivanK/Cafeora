@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top"
+    android:background="@color/cream">
+
+
+    <TextView
+        android:id="@+id/cartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/outfit"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp"/>
+
+
+    <!-- This will be filled with cart items dynamically -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:id="@+id/cartItemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/cartTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/cart_total_label"
+        android:textSize="18sp"
+        android:fontFamily="@font/outfit"
+        android:textColor="@color/brown"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        android:backgroundTint="@color/accent"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_menu"
+        android:backgroundTint="@color/malt"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_on_card"
+            android:autofillHints="name"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/inputCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            android:inputType="number"
+            android:maxLength="16"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:autofillHints="creditCardNumber"/>
+
+        <EditText
+            android:id="@+id/inputExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/expiry_date"
+            android:inputType="text"
+            android:maxLength="5"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:autofillHints="creditCardExpirationDate"/>
+
+        <EditText
+            android:id="@+id/inputCVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cvv"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:layout_marginBottom="24dp"
+            android:textColor="@android:color/black"
+            android:autofillHints="creditCardSecurityCode"/>
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_order"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/malt"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>
